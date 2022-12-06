@@ -16,7 +16,9 @@ public class Client {
 
             String city = reader.readLine();
             System.out.println(city);
-            writer.println("Москва");
+            Scanner scanner = new Scanner(System.in);
+            String out = scanner.nextLine();
+            writer.println(out);
 
             if (!city.equalsIgnoreCase("???")) {
                 System.out.println(reader.readLine());
